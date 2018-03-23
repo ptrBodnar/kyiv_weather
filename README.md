@@ -1,2 +1,1 @@
-Ffgd
 # kyiv_weather
