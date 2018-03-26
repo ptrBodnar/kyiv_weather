@@ -305,10 +305,10 @@ body {
   margin-bottom: 0 !important;
   padding-top: 0 !important;
   margin-top: 0 !important; } 
-  @media (max-width:  767px), (max-width: 400px), (orientation: portrait) {
+  @media (max-width:  767px) and (max-width: 400px)and (orientation: portrait) {
     .jumbotron {height: 50vh;}
   }
-  @media (max-width:  767px), (max-width: 400px), (orientation: landscape) {
+  @media (max-width:  767px) and (max-width: 400px) and (orientation: landscape) {
     .jumbotron {height: 100vh;}
   }  
 
