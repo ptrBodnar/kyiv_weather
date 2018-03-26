@@ -304,7 +304,10 @@ body {
   padding-bottom: 0 !important;
   margin-bottom: 0 !important;
   padding-top: 0 !important;
-  margin-top: 0 !important; }
+  margin-top: 0 !important; } 
+  .jumbotron (max-width:  767px), (max-width: 400px) {
+    height: 50vh;
+  }
 
 .bg-overlay {
   height: 100vh;
