@@ -308,6 +308,9 @@ body {
   @media (max-width:  767px), (max-width: 400px) {
     .jumbotron {height: 50vh;}
   }
+  @media (max-width:  767px), (max-width: 400px), (orientation: portrait) {
+    .jumbotron {height: 100vh;}
+  }  
 
 .bg-overlay {
   height: 100vh;
@@ -326,6 +329,11 @@ h1 {
       margin-top: 16vh;
       font-size: 3vw !important;
       line-height: 2rem !important; } }
+   @media (max-width: 767px), (max-width: 400px), (orientation: portrait) {
+    h1 {
+      margin-top: 16vh;
+      font-size: 3vw !important;
+      line-height: 2rem !important; } }   
 
 h1 span {
   background: rgba(0, 0, 0, 0.2); }
@@ -344,10 +352,10 @@ h5 {
   font-size: 1vw;
   text-align: center;
   color: #46bcff;
-  margin-top: 50px; }
+  margin-top: 1vw; }
   @media (max-width: 767px), (max-width: 400px) {
     h5 {
-      margin-top: 0.5vw;
+      margin-top: 2vw;
       font-size: 2vw !important;
       line-height: 1rem !important; } }
 
