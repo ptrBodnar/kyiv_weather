@@ -318,23 +318,22 @@ body {
 
 h1 {
   text-align: center;
-  color: #4d4d4d !important; 
-  margin-top: 32vh;
-  font-size: 4vw !important;
-  line-height: 5rem !important;
-  margin-bottom: 0;}
+  color: #4d4d4d !important; }
+  @media (max-width: 1440px), (max-width: 2570px), (max-width: 1285px), (max-width: 1024px) {
+    h1 {
+      margin-top: 34vh;
+      font-size: 4vw !important;
+      line-height: 5rem !important; } }
    @media (max-width: 767px) and (max-width: 400px) and (orientation: portrait) {
     h1 {
-      margin-top: 18vh;
-      font-size: 3vw !important;
-      line-height: 1.5rem !important; }
-    } 
+      margin-top: 42vh;
+      font-size: 4.3vw !important;
+      line-height: 1.5rem !important; }} 
     @media (orientation: landscape) {
     h1{
-      margin-top: 42vh;
-      font-size: 3vw !important;
-      line-height: 2rem !important; }
-    }
+      margin-top: 38vh;
+      font-size: 4vw !important;
+      line-height: 2rem !important; }}
 
 
 h1 span {
