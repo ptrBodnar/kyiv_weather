@@ -332,7 +332,7 @@ h1 {
     @media (orientation: landscape) {
     h1{
       margin-top: 42vh;
-      font-size: 5vw !important;
+      font-size: 3vw !important;
       line-height: 2rem !important; }
     }
 
