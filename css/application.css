@@ -329,10 +329,10 @@ h1 {
       margin-top: 22vh;
       font-size: 4.3vw !important;
       line-height: 1.5rem !important; }} 
-    @media (orientation: landscape) {
+    @media (max-width: 767px) and (orientation: landscape) {
     h1{
-      margin-top: 38vh;
-      font-size: 3vw !important;
+      margin-top: 40vh;
+      font-size: 4vw !important;
       line-height: 1.5rem !important; }}
 
 
@@ -353,10 +353,15 @@ h5 {
   font-size: 1vw;
   text-align: center;
   color: #46bcff;
-  margin-top: 1vw; }
+  margin-top: 1vw;
+  line-height: 1rem !important; }
+  @media (max-width: 400px) {
+    h5 {
+      font-size: 1vw !important;
+      line-height: 1rem !important; } }
   @media (max-width: 767px), (max-width: 400px) {
     h5 {
-      font-size: 2vw !important;
+      font-size: 1vw !important;
       line-height: 1rem !important; } }
 
 h5 span {
