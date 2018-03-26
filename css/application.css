@@ -315,13 +315,13 @@ h1 {
   color: #4d4d4d !important; }
   @media (max-width: 1440px), (max-width: 2570px), (max-width: 1285px), (max-width: 1024px) {
     h1 {
-      margin-top: 18vw;
+      margin-top: 18vh;
       font-size: 4vw !important;
       line-height: 5rem !important; } }
   @media (max-width: 767px), (max-width: 400px) {
     h1 {
-      width: 50vw;
-      margin-top: 40vw;
+      text-align: center;
+      margin-top: 5vh;
       font-size: 4vw !important;
       line-height: 4rem !important; } }
 
@@ -339,13 +339,14 @@ h3 span {
   background: rgba(0, 0, 0, 0.2); }
 
 h5 {
-  font-size: 1.3rem;
+  font-size: 2vw;
   text-align: center;
   color: #46bcff;
   margin-top: 50px; }
   @media (max-width: 767px), (max-width: 400px) {
     h5 {
-      font-size: 1.4rem !important;
+      margin-top: 1vw;
+      font-size: 1vw !important;
       line-height: 2rem !important; } }
 
 h5 span {
