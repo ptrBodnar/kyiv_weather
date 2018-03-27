@@ -362,23 +362,20 @@ h2 {
 h3 {
   text-align: center;
   font-weight: 800;
-  color: #4d4d4d !important; }
+  color: #4d4d4d !important;
+  margin-top: 10px !important; }
   @media (max-width: 2570px), (max-width: 1440px), (max-width: 1285px) {
     h3 {
-      font-size: 2.5vw !important;
-      line-height: 4vw !important; } }
+      font-size: 2.5vw !important; } }
   @media (max-width: 1024px) {
     h3 {
-      font-size: 3vw !important;
-      line-height: 5vw !important; } }
+      font-size: 3vw !important; } }
   @media (max-width: 767px) and (orientation: portrait) {
     h3 {
-      font-size: 4vw !important;
-      line-height: 5vw !important; } }
+      font-size: 3.5vw !important; } }
   @media (max-width: 767px) and (orientation: landscape) {
     h3 {
-      font-size: 4vw !important;
-      line-height: 5vw !important; } }
+      font-size: 4vw !important; } }
 
 h5 {
   font-size: 14px;
