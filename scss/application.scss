@@ -1,0 +1,330 @@
+@import "base/variables";
+@import "base/mixins";
+//@import "base/base";
+@import "components/weirdo";
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 100%;
+  color: #383e47;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  /*footer height plus padding*/
+  margin-bottom: 250px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FAA61A;
+}
+
+a.dotted {
+  /*for links*/
+  color: #4b444d;
+  border-bottom: 2px dotted #cccccc;
+}
+
+/* ======== HEADER ======== */
+
+.social-icons, .logo {
+  text-align: right;
+  position: fixed;
+  padding-top: 10px;
+  z-index: 1000;
+}
+
+.fa-twitter,
+.fa-facebook-square {
+  color: #4a4a4a;
+  float: right;
+  cursor: pointer;
+}
+
+.fa-twitter:hover,
+.fa-facebook:hover {
+  color: #FAA61A;
+}
+
+.fa-facebook-square {
+  margin-right: 10px;
+}
+
+/* ======== Footer ======== */
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+
+  background: #38393b none repeat scroll 0 0;
+  text-align: left;
+  font-size: 14px;
+  padding: 0;
+  display: block;
+
+  @media  #{$brk-xlarge},
+  #{$brk-large},
+  #{$brk-medium},
+  #{$brk-narrow} {
+    height: 195px;
+  }
+
+  @media #{$brk-spnarrow} {
+    min-height: 100px;
+  }
+}
+
+#footer-wraper {
+  padding-top: 20px;
+  margin-left: 5%;
+}
+
+.links li {
+  color: #fff;
+  font-size: 0.7em;
+}
+
+@media (max-width: 1024px) {
+  .links li {
+    display: none;
+  }
+}
+
+.copyright {
+  float: left;
+  color: #fff;
+
+  @media  #{$brk-xlarge},
+  #{$brk-large},
+  #{$brk-medium},
+  #{$brk-narrow} {
+    font-size: 0.7em;
+  }
+
+  @media #{$brk-spnarrow} {
+    font-size: 0.9em;
+  }
+}
+
+
+.copying-info {
+
+  line-height: 15px;
+  color: #ffffff;
+  @media  #{$brk-xlarge},
+  #{$brk-large},
+  #{$brk-medium},
+  #{$brk-narrow} {
+    font-size: 0.7em;
+    padding-top: 20px;
+  }
+
+  @media #{$brk-spnarrow} {
+    font-size: 0.9em;
+    padding-top: 5px;
+  }
+}
+
+
+
+.support-site:link,
+.support-site:visited {
+  color: #FAA61A;
+  font-size: 1.2em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.social-tw, .social-fb {
+  font-size: 1.5em !important;
+}
+
+.social-icons {
+  text-align: right !important;
+}
+
+body {
+  font: 18px/1.4 "PT Sans", Serif;
+  color: #464749;
+  overflow-x: hidden !important;
+  background-color: #ffffff;
+}
+
+.jumbotron {
+  background-image: url(../img/temperature.jpg);
+  background-size: 100% 100%;
+  height: 100vh;
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+
+  @media (max-width: 767px)
+  and (max-width: 400px)
+  and (orientation: landscape) {
+    height: 100vh;
+  }
+
+  @media (max-width: 767px)
+  and (max-width: 400px)
+  and (orientation: portrait) {
+    height: 50vh;
+  }
+  /* --  iPhone 7, 8 --- */
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    height: 50vh;
+  }
+/* --  iPad Rro--- */
+  @media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait) {
+    height: 50vh;
+  }
+}
+
+.bg-overlay {
+  height: 100vh;
+  background: rgba(56, 57, 59, 0.5);
+}
+
+h1 {
+  text-align: center;
+  color: #4d4d4d !important;
+  font-weight: 700;
+
+  @media  #{$brk-xlarge},
+  #{$brk-large} {
+    margin-top: 40vh;
+    font-size: 3vw !important;
+    line-height: 4vw !important;
+  }
+  @media  #{$brk-medium} {
+    margin-top: 40vh;
+    font-size: 3vw !important;
+    line-height: 4vw !important;
+  }
+  @media  #{$brk-narrow}{
+    margin-top: 40vh;
+    font-size: 3.5vw !important;
+    line-height: 5vw !important;
+  }
+  @media #{$brk-spnarrow}
+  and (orientation: portrait) {
+    margin-top: 20vh;
+    font-size: 4vw !important;
+    line-height: 5vw !important;
+  }
+
+  @media #{$brk-spnarrow}
+  and (orientation: landscape) {
+    margin-top: 40vh;
+    font-size: 4vw !important;
+    line-height: 5vw !important;
+  }
+
+  /* --  iPad Rro--- */
+  @media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait) {
+    margin-top: 20vh;
+  }
+}
+
+h1 span {
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+h3 {
+  text-align: center;
+  font-weight: 800;
+  color: #4d4d4d !important;
+
+  @media  #{$brk-xlarge},
+  #{$brk-large},
+  #{$brk-medium} {
+    font-size: 2.5vw !important;
+    line-height: 4vw !important;
+  }
+  @media  #{$brk-narrow}{
+    font-size: 3vw !important;
+    line-height: 5vw !important;
+  }
+  @media #{$brk-spnarrow}
+  and (orientation: portrait) {
+    font-size: 4vw !important;
+    line-height: 5vw !important;
+  }
+
+  @media #{$brk-spnarrow}
+  and (orientation: landscape) {
+    font-size: 4vw !important;
+    line-height: 5vw !important;
+  }
+}
+
+h5 {
+  font-size: 14px;
+  text-align: right;
+  color: #46bcff;
+  margin: 20px 5% 50px 0;
+}
+
+h5 span {
+  color: #4d4d4d;
+}
+
+.sorting {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  vertical-align: text-top;
+}
+
+p.paragraph {
+  font-size: 2rem;
+  line-height: 2.6rem;
+  margin: 20px 0;
+}
+
+p span {
+  background-color: #46bcff;
+  font-size: 1.8rem;
+  color: white;
+  line-height: 3rem;
+}
+
+#page-wrap {
+  margin: 50px;
+}
+
+
+
